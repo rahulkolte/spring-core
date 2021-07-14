@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<!-- <bean id="Item1" class="com.rk.Item"> <property name="name" value="Bag" 
+		/> <property name="price" value="1000" /> </bean> <bean id="Item2" class="com.rk.Item"> 
+		<property name="name" value="Mobile" /> <property name="price" value="12000" 
+		/> </bean> <bean id="Order" class="com.rk.Order"> <property name="id" value="1" 
+		/> </bean> <bean name="departmentBean" class="com.rk.DepartmentBean"> <property 
+		name="deptName" value="dev" /> </bean> <bean name="employeeBean" class="com.rk.EmployeeBean" 
+		autowire="byName"> </bean> <bean name="employeeBeanByType" class="com.rk.EmployeeBean" 
+		autowire="byType"> </bean> <bean name="employeeBeanByCon" class="com.rk.EmployeeBean" 
+		autowire="constructor"> <constructor-arg ref="departmentBean" /> </bean> -->
+	<!-- <bean id="q1" class="com.rk.DepartmentBean"> <property name="deptName" 
+		value="q1" /> </bean> <bean id="q2" class="com.rk.DepartmentBean"> <property 
+		name="deptName" value="q2" /> </bean> <bean name="emp" class="com.rk.EmployeeBean"> 
+		</bean> -->
+
+
+	<bean id="item1" class="com.rk.Item">
+		<property name="name" value="Mobile" />
+		<property name="price" value="12000" />
+	</bean>
+
+
+	<bean id="item2" class="com.rk.Item">
+		<property name="name" value="Laptop" />
+		<property name="price" value="120000" />
+	</bean>
+
+
+	<bean id="item3" class="com.rk.Item">
+		<property name="name" value="CarromBoard" />
+		<property name="price" value="1200" />
+	</bean>
+
+
+
+
+	<!-- Enable Annotation based configuration -->
+	<context:annotation-config />
+</beans>
+
+
+
+
+
